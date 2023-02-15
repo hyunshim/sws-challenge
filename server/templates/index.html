@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div>
+    <h1>SWS Back-end</h1>
+    <p>List of API endpoints:</p>
+    <li><a href="/company/summaries">/company/summaries</a></li>
+    <li><a href="/company/summaries?show_prices">/company/summaries?show_prices</a></li>
+    <li><a href="/company/prices">/company/prices</a></li>
+    <li><a href="/company/scores">/company/scores</a></li>
+    <p>A better implementation would be to use openAPI if I had more time</p>
+    <p>Docs for API endpoints are located in the /routes/ folder</p>
+</div>
+{% endblock body %}

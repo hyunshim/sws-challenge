@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_cors import CORS
 from extensions import db, ma
 from routes import company_bp
@@ -20,5 +20,9 @@ def create_app(database_uri: str = "sqlite:///sws.sqlite3"):
 
     # Use a blueprint to group company endpoints to increase organisation of code
     app.register_blueprint(company_bp)
+
+    @app.route("/")
+    def index():
+        return render_template("index.html")
 
     return app
