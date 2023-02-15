@@ -1,13 +1,11 @@
 import React from "react";
-import { Company } from "../../../typings";
+import { Company, CompanyPageProps } from "../../../typings";
 
-type CompanyPageProps = {
-  params: {
-    companyId: string;
-    prices: number[];
-  };
-};
-
+/**
+ * Fetch data for a company using its id. Uses Static Site Generation to optimise speed.
+ * @param companyId id of the company we want to get the data for
+ * @returns A company object with the required data
+ */
 const fetchCompany = async (companyId: string) => {
   const response = await fetch(
     `${process.env.BASE_URL}/company/summaries/${companyId}?show_prices`

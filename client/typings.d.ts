@@ -33,14 +33,21 @@ export type HeaderRow = {
   label: string;
 };
 
-export interface CompanyProps {
-  companies: Company[];
-}
+export type CompanyPageProps = {
+  params: {
+    companyId: string;
+    prices: number[];
+  };
+};
 
-export interface TableProps {
+export type CompanyProps = {
+  companies: Company[];
+};
+
+export type TableProps = {
   table_data: Any;
   table_headers: HeaderRow[];
   table_view: Any;
   score_filter: Any;
   ticker_filter: Any;
-}
+};

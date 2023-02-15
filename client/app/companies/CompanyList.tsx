@@ -5,6 +5,11 @@ import TableView from "../../components/TableView";
 import React from "react";
 import Link from "next/link";
 
+/**
+ * Generates a company list using TableView
+ * @param companies: takes in company data
+ * @returns Table View for companies
+ */
 function CompanyList({ companies }: CompanyProps) {
   const headers: HeaderRow[] = [
     { key: "name", label: "name" },
