@@ -1,5 +1,7 @@
 # 1. Introduction
 
+A proof-of-concept application using a Flask back-end with SQLite3 and a Next.js front-end to showcase an application that users can use to check upon and compare different stocks to help them with their investments.
+
 ## 1.1 Building, running, and testing the application
 
 ### 1.1.1 Server
