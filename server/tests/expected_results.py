@@ -16,7 +16,7 @@ expected_company = {
   },
   "share_price": 44.51,
   "unique_symbol": "ASX:APT",
-  "volatility": 29.51
+  "volatility": 30.27
 }
 
 expected_company_with_prices = {
@@ -244,7 +244,7 @@ expected_company_with_prices = {
   },
   "share_price": 44.51,
   "unique_symbol": "ASX:APT",
-  "volatility": 29.51
+  "volatility": 30.27
 }
 
 expected_price = {

@@ -18,11 +18,16 @@ async function Companies() {
   const companies: Company[] = await fetchCompanies();
   return (
     <Suspense fallback={<p>Loading Companies...</p>}>
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-12">
         <div className="max-w-screen-xl w-full">
-          <h1 className="text-3xl">Stocks Information</h1>
-          <p className="text-slate-100/60">
-            Click on table headers to sort by the corresponding attribute
+          <h1 className="text-3xl pb-4">Stocks Information</h1>
+          <p>
+            You may click on the table headers to sort by the corresponding
+            feature.
+          </p>
+          <p>
+            The company's detail page can be accessed by clicking the company's
+            name.
           </p>
           <CompanyList companies={companies} />
         </div>

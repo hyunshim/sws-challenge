@@ -59,6 +59,7 @@ function TableView({
         <div className="flex flex-row bg-secondary rounded-full px-4 py-1 mr-6 w-1/3">
           <p className="mr-3">Ticker</p>
           <input
+            data-testid="ticker-filter"
             onChange={filterByTicker}
             className="bg-transparent focus:outline-none w-full"
             placeholder="Filter by ticker..."
@@ -84,7 +85,7 @@ function TableView({
               })}
             </tr>
           </thead>
-          <tbody className="divide-y divide-white/10">
+          <tbody data-testid="table-body" className="divide-y divide-white/10">
             {data
               .filter((row: Object) => score_filter(row, minScore, maxScore))
               .filter((row: Object) => ticker_filter(row, query))

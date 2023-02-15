@@ -19,9 +19,13 @@ const fetchCompany = async (companyId: string) => {
 async function CompanyPage({ params: { companyId } }: CompanyPageProps) {
   const company = await fetchCompany(companyId);
   return (
-    <div className="flex justify-center my-10">
+    <div className="flex justify-center my-12">
       <div className="max-w-screen-xl w-full">
-        CompanyPage: {company.id} {company.name}
+        <h1 className="text-3xl pb-4">{company.name}</h1>
+        <p>
+          This page was created to show extensibility of a company page that
+          includes a chart of prices.
+        </p>
       </div>
     </div>
   );

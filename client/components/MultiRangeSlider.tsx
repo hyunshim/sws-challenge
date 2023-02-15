@@ -71,6 +71,7 @@ const MultiRangeSlider: FC<MultiRangeSliderProps> = ({
   return (
     <div className="flex items-center bottom-0.5 relative">
       <input
+        data-testid="min-score-range"
         type="range"
         min={min}
         max={max}
@@ -86,6 +87,7 @@ const MultiRangeSlider: FC<MultiRangeSliderProps> = ({
         })}
       />
       <input
+        data-testid="max-score-range"
         type="range"
         min={min}
         max={max}
